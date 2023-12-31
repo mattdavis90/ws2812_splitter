@@ -1,5 +1,8 @@
 # WS2812 Splitter
 
+> [!WARNING]
+> This project is still very much in beta and I am yet to receive the PCBs and fully verify the desgn.
+
 A configurable splitter compatible with WS2812(B) LEDs. Splits the incoming signal two ways; the first is a copy of the input and the second is disabled for N LED's worth of data. This allows you to run two strips in parallel with each other.
 
 The project is based on the work by [Pete on hackaday.io](https://hackaday.io/project/8181-ws2812b-delay-splitter). As far as I can tell Pete never got it working, this is intended to be a continuation of that work.
@@ -8,7 +11,7 @@ The project is being used personally for WS2812B Icicles. Rather than running wi
 
 This is maybe best viewed as an image
 
-![](images/ws2812_splitter.png)
+<img src="images/ws2812_splitter.png" width="450px" />
 
 ## Hardware
 
@@ -20,7 +23,7 @@ A custom PCB was designed using the TSSOP-20 package to ease soldering. On board
 
 The Renesas Greenpak software is free to download. I used the Ubuntu version successfully on Fedora. Mac and Windows are also available. This is a screenshot of the design I came up with. I went the multi-programmable chips; a little bit more expensive but I wanted to be sure the design worked and could be tweaked.
 
-![](images/greenpak.png)
+<img src="images/greenpak.png" width="450px" />
 
 *Note*: Counters reset to `N` and trigger on 0 so should be set to `N-1`
 
@@ -56,8 +59,8 @@ I aimed to keep in compact while still allowing hand soldering. The design uses 
 
 `N` is set using `JP1-4` using binary - the pads can be soldered and desoldered easily.
 
-![](images/pcb.png)
-![](images/pcb_render.png)
+<img src="images/pcb.png" width="450px" />
+<img src="images/pcb_render.png" width="450px" />
 
 ## Programming
 
